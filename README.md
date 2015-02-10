@@ -1,10 +1,12 @@
 # jquery.removeStyle-plugin
 jquery plugin to remove inline styles
 
-Example:
+<b>Example:</b>
 
-$('your-element').removeStyle('width');
+<pre>$('your-element').removeStyle('width');</pre>
 
-Remove multiple styles using a comma separated
+<b>Remove multiple styles using a comma separated</b>
 
-$('your-element').removeStyle('width,height');
+<pre>$('your-element').removeStyle('width,height');</pre>
+
+based on <a href="http://stackoverflow.com/questions/2465158/is-it-possible-to-remove-inline-styles-with-jquery">http://stackoverflow.com/questions/2465158/is-it-possible-to-remove-inline-styles-with-jquery</a>
