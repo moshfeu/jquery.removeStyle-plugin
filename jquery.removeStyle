@@ -1,0 +1,13 @@
+(function( $ ) {
+    $.fn.removeStyle = function (style) {
+        return this.each(function () {
+            var elem = $(this);
+            $.trim(style).split(',').forEach(function (sty) {
+                var search = new RegExp(sty + '[^;]+;?', 'g');
+                elem.attr('style', function (i, style) {
+                    return style.replace(search, '');
+                });
+            });
+        });
+    };
+}( jQuery ));
